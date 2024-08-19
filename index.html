@@ -53,15 +53,17 @@
         <h2 id="gallery-heading">dummy text of the printing and dummy</h2>
         <p id="gallery-content">Lorem Ipsum is simply <span>dummy text</span> of the printing and typesetting industry.<br />
             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</p>
-        <ul>
-<!--TODO: alt 작성하기-->
-            <li><img src="./img/img-1.jpg" alt=""></li>
-            <li><img src="./img/img-2.jpg" alt=""></li>
-            <li><img src="./img/img-3.jpg" alt=""></li>
-            <li><img src="./img/img-4.png" alt=""></li>
-            <li><img src="./img/img-5.png" alt=""></li>
-            <li><img src="./img/img-6.png" alt=""></li>
-        </ul>
+        <div id="gallery-pics">
+            <ul>
+                <!--TODO: alt 작성하기-->
+                <li><img src="./img/img-1.jpg" alt=""></li>
+                <li><img src="./img/img-2.jpg" alt=""></li>
+                <li><img src="./img/img-3.jpg" alt=""></li>
+                <li><img src="./img/img-4.png" alt=""></li>
+                <li><img src="./img/img-5.png" alt=""></li>
+                <li><img src="./img/img-6.png" alt=""></li>
+            </ul>
+        </div>
         <div id="gallery-more">
             <p>
                 Continue exploring HODU
@@ -71,34 +73,49 @@
             </a>
         </div>
     </section>
+    <hr>
     <section id="main-map">
         <h2>Where you'll be</h2>
         <address>330, Cheomdan-ro, Jeju-si, Jeju-do, Republic of Korea</address>
-        <div id="map"></div>
+        <div id="daumRoughmapContainer1724048741264" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+        <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+        <!-- 3. 실행 스크립트 -->
+        <script charset="UTF-8">
+            new daum.roughmap.Lander({
+                "timestamp" : "1724048741264",
+                "key" : "2kdqy",
+                "mapWidth" : "1280",
+                "mapHeight" : "520"
+            }).render();
+        </script>
     </section>
-    <section>
+    <section id="subscribe-box">
         <div id="main-subscribe">
             <h3>Subscribe to our Blog post</h3>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br />
                 Lorem Ipsum has been the industry's standard dummy text </p>
         </div>
-        <form class="main-subscribe-input">
+        <form id="main-subscribe-input">
             <input type="email" placeholder="Enter your e-mail address" id="input-email" required>
             <button type="submit" class="btn">Subscribe</button>
         </form>
     </section>
 </main>
-<footer>
-    <h2>
-        <a href="#"></a><img src="./img/logo-footer.png" alt="HODU Logo">
-    </h2>
-    <ul>
-        <li><a href="#" class="blog-ico">블로그</a></li>
-        <li><a href="#" class="ig-ico">인스타그램</a></li>
-        <li><a href="#" class="fb-ico">페이스북</a></li>
-        <li><a href="#" class="yt-ico">유튜브</a></li>
-    </ul>
+<footer id="footer-container">
+    <div id="footer-bg"></div>
+    <div id="footer-content">
+        <h2>
+            <a href="#"><img src="./img/logo-footer.png" alt="HODU Logo"></a>
+        </h2>
+        <ul>
+            <li><a href="#" class="blog-ico"><img src="./img/ico-blog.png" alt="호두 블로그로 이동하기"></a></li>
+            <li><a href="#" class="ig-ico"><img src="./img/ico-ig.png" alt="호두 인스타그램으로 이동하기"></a></li>
+            <li><a href="#" class="fb-ico"><img src="./img/ico-fb.png" alt="호두 페이스북으로 이동하기"></a></li>
+            <li><a href="#" class="yt-ico"><img src="./img/ico-yt.png" alt="호두 유튜브로 이동하기"></a></li>
+        </ul>
+    </div>
 </footer>
-<a href="#headerTop">최상단으로 이동 버튼</a>
+<a href="#headerTop" id="goTopBtn"><img src="./img/ico-top.png" alt="사이트 최상단으로 이동하기"></a>
 </body>
 </html>
