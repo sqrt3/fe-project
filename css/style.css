@@ -90,7 +90,6 @@ nav > ul {
 #header-content {
     font-size: 16px;
     line-height: 20px;
-    paragraph: 2px;
 }
 
 #main-intro {
@@ -105,7 +104,7 @@ nav > ul {
     width: 660px;
     height: 390px;
     border-radius: 30px;
-    box-shadow: 10px 10px 30px 0px #00000040;
+    box-shadow: 10px 10px 30px 0 #00000040;
     object-fit: cover;
 }
 
