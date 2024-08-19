@@ -27,5 +27,5 @@
     3. 이메일이 잘 입력되었다면 모달창이 뜹니다. 이때 모달창의 `OK! I love HODU` 버튼을 클릭하면 form이 제출되고 모달창이 닫힙니다.
 
 ### 참고
-[인프런 HTML/CSS 베이스캠프 강의](https://www.inflearn.com/course/html-css-%EB%B2%A0%EC%9D%B4%EC%8A%A4%EC%BA%A0%ED%94%84)
-[Figma 구현 페이지](https://www.figma.com/design/s9RCnA6dSi3QHHeMDFHKE6/EST-%EC%98%A4%EB%A5%B4%EB%AF%B8(BE)_HTML%2FCSS%2FJS?node-id=104924-12&t=bBf7xI1ULuudbZps-0)
+- [인프런 HTML/CSS 베이스캠프 강의](https://www.inflearn.com/course/html-css-%EB%B2%A0%EC%9D%B4%EC%8A%A4%EC%BA%A0%ED%94%84)
+- [Figma 구현 페이지](https://www.figma.com/design/s9RCnA6dSi3QHHeMDFHKE6/EST-%EC%98%A4%EB%A5%B4%EB%AF%B8(BE)_HTML%2FCSS%2FJS?node-id=104924-12&t=bBf7xI1ULuudbZps-0)
