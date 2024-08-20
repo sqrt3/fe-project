@@ -8,7 +8,13 @@
 * {
     margin: 0;
     padding: 0;
-    line-height: 20px;
+    line-height: 1.5; /* 20px => 1.5 */
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Pretendard-Regular';
+    scroll-behavior: smooth;
 }
 
 ul, ol {
@@ -19,6 +25,7 @@ a {
     display: inline-block;
     text-decoration: none;
     color: inherit;
+    border: 1px solid red;
 }
 
 button {
@@ -31,9 +38,9 @@ img {
     vertical-align: top;
 }
 
-html {
-    scroll-behavior: smooth;
-    font-family: 'Pretendard-Regular';
+header {
+    height: 900px;
+    background-color: #F2E9D8;
 }
 
 .btn {
@@ -49,16 +56,14 @@ html {
     box-sizing: border-box;
 }
 
-header {
-    height: 900px;
+.nav-menu {
     background-color: #F2E9D8;
-}
-
-.header-top {
     display: flex;
+    width: 100%;
     justify-content: space-around;
     align-items: center;
     gap: 110px;
+    z-index: 2;
 }
 
 nav > ul {
@@ -82,13 +87,11 @@ nav > ul {
 
 #header-title {
     font-size: 48px;
-    line-height: 60px;
     font-weight: 700;
 }
 
 #header-content {
     font-size: 16px;
-    line-height: 20px;
 }
 
 #main-intro {
@@ -103,34 +106,29 @@ nav > ul {
     width: 660px;
     height: 390px;
     border-radius: 30px;
-    box-shadow: 10px 10px 30px 0 #00000040;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.25);
     object-fit: cover;
 }
 
 .text-content h2 {
     font-size: 36px;
-    line-height: 45px;
     margin-bottom: 30px;
 }
 
 .text-content p {
     font-size: 16px;
-    line-height: 20px;
 }
 
 #main-gallery #gallery-heading {
     font-weight: 700;
     font-size: 48px;
-    line-height: 60px;
     text-align: center;
     color: #D97652;
 }
 
 #main-gallery #gallery-content {
     margin-top: 40px;
-    font-weight: 400;
     font-size: 16px;
-    line-height: 20px;
     text-align: center;
 }
 
@@ -139,25 +137,22 @@ nav > ul {
 }
 
 #gallery-pics ul {
-    margin: 88px 320px 100px;
+    margin: 10vh 300px;
     display: grid;
-    place-items: center;
     grid-template-columns: repeat(3, 1fr);
-    max-width: 1280px;
-    gap: 72px;
+    grid-row-gap: 28vh;
 }
 
 #gallery-pics li {
-    box-sizing: border-box;
-    width: 378px;
-    height: 378px;
+    width: 19vw;
+    height: 19vh;
 }
 
 #gallery-pics img {
-    width: 378px;
-    height: 378px;
+    width: 100%;
+    height: 200%;
     border-radius: 30px;
-    box-shadow: 10px 10px 30px 0 #00000040;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.25);
 }
 
 #gallery-more {
@@ -171,7 +166,6 @@ nav > ul {
 #gallery-more p {
     font-weight: 700;
     font-size: 24px;
-    line-height: 30px;
 }
 
 hr {
@@ -191,7 +185,6 @@ hr {
 #main-map h2 {
     font-weight: 700;
     font-size: 36px;
-    line-height: 45px;
 }
 
 #main-map address {
@@ -199,48 +192,39 @@ hr {
     color: #606367;
     font-weight: 500;
     font-size: 16px;
-    line-height: 20px;
 }
 
-/*TODO: Map이 튀어나와있음..*/
 #daumRoughmapContainer1724048741264 {
     margin-top: 28px;
-    width: 1280px;
+    width: 100%;
     height: 520px;
     border-radius: 12px;
-    box-sizing: border-box;
 }
 
 #subscribe-box {
     display: flex;
-    /*position: absolute;*/
     align-items: center;
     justify-content: space-between;
     margin: 81px 320px 0;
     padding: 50px 58px;
-
     background: #263140;
     border-radius: 30px;
-
     gap: 18px;
+    z-index: 3;
+    position: relative;
 }
 
 #main-subscribe {
     color: #fff;
-    z-index: 1;
 }
 
 #main-subscribe h3 {
     font-size: 36px;
-    line-height: 45px;
-    font-weight: 700;
     margin-bottom: 18px;
 }
 
 #main-subscribe p {
     font-size: 14px;
-    font-weight: 400;
-    line-height: 18px;
     color: #F2E9D8;
 }
 
@@ -259,14 +243,11 @@ hr {
     height: 24px;
     transform: translateY(-50%);
     background: url("../img/ico-mail.png") no-repeat;
-    z-index: 1;
 }
 
 #main-subscribe-input input {
-    position: relative;
     width: 100%;
     padding: 20px 135px 20px 60px;
-    overflow: hidden;
     border-radius: 60px;
 }
 
@@ -277,9 +258,6 @@ hr {
 }
 
 #footer-bg {
-    position: relative;
-    content: '';
-    display: block;
     background: url("../img/img-1-0.jpg") no-repeat;
     background-size: cover;
     filter: opacity(0.6);
@@ -287,7 +265,7 @@ hr {
     width: 100%;
     height: 340px;
     margin-top: -100px;
-    z-index: -1;
+    z-index: -3;
 }
 
 #footer-content {
@@ -309,4 +287,54 @@ hr {
 
 #footer-content ul li a img {
     width: 42px;
+}
+
+#goTopBtn {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 5vh;
+    left: 95vw;
+}
+
+#modal-window {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    background: url("../img/modal-bg.png") no-repeat;
+    background-size: cover;
+    width: 600px;
+    height: 400px;
+    gap: 12px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+#modal-cat-ico {
+    background: url("../img/modal-cat.png") no-repeat;
+    background-size: cover;
+    width: 110px;
+    height: 112px;
+    margin-bottom: 12px;
+}
+
+#modal-window h2 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #D97652;
+}
+
+#modal-window p {
+    font-size: 14px;
+    margin-bottom: 26px;
+}
+
+#modal-window button {
+    width: 183px;
 }
