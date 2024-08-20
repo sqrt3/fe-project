@@ -6,6 +6,7 @@
 ## CSS
 - [ ] CSS 레이아웃 Figma 구현페이지와 동일하게 수정
 - [ ] media query 사용하여 모바일 웹 구현 및 햄버거 메뉴 만들기
+- [ ] 사진들 grid에서 flex로 변경하기..
 - [X] 모달 창 CSS 입히기 - 완료 일시: 2024/08/20
 
 ## JavaScript
