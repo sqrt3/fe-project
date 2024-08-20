@@ -62,14 +62,14 @@ header {
     width: 100%;
     justify-content: space-around;
     align-items: center;
-    gap: 110px;
+    gap: 5vw; /* 110px */
     z-index: 2;
 }
 
 nav > ul {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 1.6vw; /* 30px */
 }
 
 #header {
@@ -77,12 +77,12 @@ nav > ul {
     background: url("../img/img-heading.png") no-repeat top right;
     background-size: 415px 890px;
     background-position-y: 2em;
-    margin: 0 320px;
+    margin: 0 16.67vw; /* 16.67vw is approximate for the original margin of 280px */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 40px;
+    gap: 2.1vw; /* 40px */
 }
 
 #header-title {
@@ -96,10 +96,11 @@ nav > ul {
 
 #main-intro {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    gap: 110px;
+    gap: 5vw; /* 110px */
     justify-content: space-around;
-    margin: 80px 320px 120px;
+    padding: 4vh 16.67vw 6vh; /* 80px, 120px */
 }
 
 #main-intro img {
@@ -112,7 +113,7 @@ nav > ul {
 
 .text-content h2 {
     font-size: 36px;
-    margin-bottom: 30px;
+    margin-bottom: 1.6vw; /* 30px */
 }
 
 .text-content p {
@@ -127,7 +128,7 @@ nav > ul {
 }
 
 #main-gallery #gallery-content {
-    margin-top: 40px;
+    margin-top: 2.1vw; /* 40px */
     font-size: 16px;
     text-align: center;
 }
@@ -137,30 +138,33 @@ nav > ul {
 }
 
 #gallery-pics ul {
-    margin: 10vh 300px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-row-gap: 28vh;
+    width: 100%;
+    padding: 0 16.67vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 72px;
 }
 
 #gallery-pics li {
-    width: 19vw;
-    height: 19vh;
+    width: 378px;
+    height: 378px;
 }
 
 #gallery-pics img {
-    width: 100%;
-    height: 200%;
+    width: 378px;
+    height: 378px;
     border-radius: 30px;
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.25);
 }
 
 #gallery-more {
-    margin: 0 320px;
+    margin: 0 16.67vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 28px;
+    gap: 1.5vw; /* 28px */
 }
 
 #gallery-more p {
@@ -170,16 +174,16 @@ nav > ul {
 
 hr {
     text-align: center;
-    margin: 80px auto 68px;
-    width: 1280px;
+    margin: 4vw auto 3.5vw; /* 80px, 68px */
+    width: 80vw; /* 1280px */
     color: #C4C4C4;
 }
 
 #main-map {
-    margin: 0 320px;
+    margin: 0 16.67vw; /* 16.67vw is approximate for the original margin of 280px */
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 1.1vw; /* 20px */
 }
 
 #main-map h2 {
@@ -195,7 +199,7 @@ hr {
 }
 
 #daumRoughmapContainer1724048741264 {
-    margin-top: 28px;
+    margin-top: 1.5vw; /* 28px */
     width: 100%;
     height: 520px;
     border-radius: 12px;
@@ -203,13 +207,14 @@ hr {
 
 #subscribe-box {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    margin: 81px 320px 0;
-    padding: 50px 58px;
+    margin: 5vw 16.67vw 0; /* 81px, 16.67vw, 0 */
+    padding: 4.6vh 3vw;
     background: #263140;
     border-radius: 30px;
-    gap: 18px;
+    gap: 1vw; /* 18px */
     z-index: 3;
     position: relative;
 }
@@ -220,7 +225,7 @@ hr {
 
 #main-subscribe h3 {
     font-size: 36px;
-    margin-bottom: 18px;
+    margin-bottom: 1vw; /* 18px */
 }
 
 #main-subscribe p {
@@ -277,7 +282,7 @@ hr {
 
 #footer-content ul {
     display: flex;
-    gap: 20px;
+    gap: 1.1vw; /* 20px */
 }
 
 #footer-content h2 a img {
@@ -293,8 +298,8 @@ hr {
     width: 50px;
     height: 50px;
     position: fixed;
-    bottom: 5vh;
-    left: 95vw;
+    left: 95%;
+    bottom: 5%;
 }
 
 #modal-window {
@@ -302,7 +307,7 @@ hr {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
     border-radius: 30px;
     background: url("../img/modal-bg.png") no-repeat;
     background-size: cover;
@@ -313,15 +318,15 @@ hr {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 2;
+    z-index: 5;
 }
 
 #modal-cat-ico {
     background: url("../img/modal-cat.png") no-repeat;
     background-size: cover;
-    width: 110px;
-    height: 112px;
-    margin-bottom: 12px;
+    width: 5.8vw; /* 110px */
+    height: 6vw; /* 112px */
+    margin-bottom: 0.6vw; /* 12px */
 }
 
 #modal-window h2 {
@@ -332,9 +337,28 @@ hr {
 
 #modal-window p {
     font-size: 14px;
-    margin-bottom: 26px;
+    margin-bottom: 1.4vw; /* 26px */
 }
 
 #modal-window button {
     width: 183px;
+}
+
+@media (max-width: 768px) {
+    #subscribe-box {
+        justify-content: space-evenly;
+        height: 50vh;
+    }
+
+    #main-subscribe-input {
+        flex-direction: column;
+        align-items: stretch;
+        display: block;
+    }
+
+    #main-subscribe-input button {
+        display: block;
+        top: auto;
+        right: auto;
+    }
 }
