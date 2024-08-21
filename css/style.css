@@ -23,6 +23,7 @@ ul, ol {
 
 a {
     display: inline-block;
+    line-height: normal;
     text-decoration: none;
     color: inherit;
     border: 1px solid red;
@@ -64,6 +65,15 @@ header {
     align-items: center;
     gap: 5vw; /* 110px */
     z-index: 2;
+}
+
+.nav-menu h1 a {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-menu h1 a img {
+    align-items: center;
 }
 
 nav > ul {
@@ -129,12 +139,17 @@ nav > ul {
 
 #main-gallery #gallery-content {
     margin-top: 2.1vw; /* 40px */
+    margin-bottom: 8.15vh;
     font-size: 16px;
     text-align: center;
 }
 
 #main-gallery span {
     color: #D97652;
+}
+
+#gallery-pics {
+    margin-bottom: 9.26vh;
 }
 
 #gallery-pics ul {
@@ -278,6 +293,7 @@ hr {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 #footer-content ul {
@@ -297,7 +313,7 @@ hr {
 #goTopBtn {
     width: 50px;
     height: 50px;
-    position: fixed;
+    position: sticky;
     left: 95%;
     bottom: 5%;
 }
@@ -345,8 +361,13 @@ hr {
 }
 
 @media (max-width: 768px) {
+    #main-intro {
+        padding: 0;
+    }
+
     #subscribe-box {
         justify-content: space-evenly;
+        align-items: center;
         height: 50vh;
     }
 
