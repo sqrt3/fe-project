@@ -12,17 +12,19 @@
 <body>
 <header id="headerTop">
     <div class="header-top">
-        <h1>
-            <a href="#"><img src="./img/logo.png" alt="HODU"></a>
-        </h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Support</a></li>
-                <li><a href="#" class="btn">Download</a></li>
-            </ul>
-        </nav>
+        <div class="nav-menu">
+            <h1>
+                <a href="#"><img src="./img/logo.png" alt="HODU"></a>
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#" class="btn">Download</a></li>
+                </ul>
+            </nav>
+        </div>
     </div>
     <div id="header">
         <h2 id="header-title">
@@ -40,8 +42,8 @@
 </header>
 <main>
     <section id="main-intro">
-<!-- alt 작성 요망-->
-        <img src="./img/img1-1.jpg" alt="">
+        <!-- alt 작성 요망-->
+        <img src="./img/img1-1.jpg" alt="이불 위에 누워 허공을 보는 호두">
         <div class="text-content">
             <h2>Lorem Ipsum is simply<br />
                 dummy text of the printing<br />
@@ -55,13 +57,12 @@
             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</p>
         <div id="gallery-pics">
             <ul>
-                <!--TODO: alt 작성하기-->
-                <li><img src="./img/img-1.jpg" alt=""></li>
-                <li><img src="./img/img-2.jpg" alt=""></li>
-                <li><img src="./img/img-3.jpg" alt=""></li>
-                <li><img src="./img/img-4.png" alt=""></li>
-                <li><img src="./img/img-5.png" alt=""></li>
-                <li><img src="./img/img-6.png" alt=""></li>
+                <li><img src="./img/img-1.jpg" alt="캣타워 위에서 멍하니 허공을 바라보는 호두"></li>
+                <li><img src="./img/img-2.jpg" alt="바닥에 앉아 하늘색 벽지를 쳐다보는 호두"></li>
+                <li><img src="./img/img-3.jpg" alt="침대 아래에서 나를 바라보는 호두"></li>
+                <li><img src="./img/img-4.png" alt="가까이서 바라본 호두"></li>
+                <li><img src="./img/img-5.png" alt="나무 바닥에서 위에있는 나를 쳐다보는 호두"></li>
+                <li><img src="./img/img-6.png" alt="야외 대리석 바닥에 누워 하품하는 호두"></li>
             </ul>
         </div>
         <div id="gallery-more">
@@ -78,17 +79,17 @@
         <h2>Where you'll be</h2>
         <address>330, Cheomdan-ro, Jeju-si, Jeju-do, Republic of Korea</address>
         <div id="daumRoughmapContainer1724048741264" class="root_daum_roughmap root_daum_roughmap_landing"></div>
-        <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+        <!--        <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>-->
 
-        <!-- 3. 실행 스크립트 -->
-        <script charset="UTF-8">
-            new daum.roughmap.Lander({
-                "timestamp" : "1724048741264",
-                "key" : "2kdqy",
-                "mapWidth" : "1280",
-                "mapHeight" : "520"
-            }).render();
-        </script>
+        <!--        &lt;!&ndash; 3. 실행 스크립트 &ndash;&gt;-->
+        <!--        <script charset="UTF-8">-->
+        <!--            new daum.roughmap.Lander({-->
+        <!--                "timestamp" : "1724048741264",-->
+        <!--                "key" : "2kdqy",-->
+        <!--                "mapWidth" : "1280",-->
+        <!--                "mapHeight" : "520"-->
+        <!--            }).render();-->
+        <!--        </script>-->
     </section>
     <section id="subscribe-box">
         <div id="main-subscribe">
@@ -97,11 +98,18 @@
                 Lorem Ipsum has been the industry's standard dummy text </p>
         </div>
         <form id="main-subscribe-input">
-            <input type="email" placeholder="Enter your e-mail address" id="input-email" required>
-            <button type="submit" class="btn">Subscribe</button>
+            <input type="text" placeholder="Enter your e-mail address" id="input-email" required>
+            <button type="submit" class="btn" onclick="validate()">Subscribe</button>
         </form>
+
     </section>
 </main>
+<div id="modal-window">
+    <div id="modal-cat-ico"></div>
+    <h2>Thank you!</h2>
+    <p>Lorem Ipsum is simply dummy text of the printing industry. </p>
+    <button type="submit" class="btn" id="modal-btn">OK! I Love HODU</button>
+</div>
 <footer id="footer-container">
     <div id="footer-bg"></div>
     <div id="footer-content">
@@ -116,6 +124,7 @@
         </ul>
     </div>
 </footer>
-<a href="#headerTop" id="goTopBtn"><img src="./img/ico-top.png" alt="사이트 최상단으로 이동하기"></a>
+<a href="#headerTop" id="goTopBtn" style="position: sticky; display: none"><img src="./img/ico-top.png" id="topBtn" alt="사이트 최상단으로 이동하기"></a>
+<script src="./js/script.js"></script>
 </body>
 </html>
