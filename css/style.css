@@ -57,22 +57,23 @@ header {
     box-sizing: border-box;
 }
 
-.nav-menu {
+.nav-container {
     background-color: #F2E9D8;
     display: flex;
     width: 100%;
+    height: 100px;
     justify-content: space-around;
     align-items: center;
     gap: 5vw; /* 110px */
     z-index: 2;
 }
 
-.nav-menu h1 a {
+.nav-container h1 a {
     display: flex;
     justify-content: center;
 }
 
-.nav-menu h1 a img {
+.nav-container h1 a img {
     align-items: center;
 }
 
@@ -80,6 +81,10 @@ nav > ul {
     display: flex;
     align-items: center;
     gap: 1.6vw; /* 30px */
+}
+
+#headerTop {
+    overflow: hidden;
 }
 
 #header {
@@ -360,7 +365,39 @@ hr {
     width: 183px;
 }
 
+#burger-menu {
+    display: none;
+}
+
 @media (max-width: 768px) {
+    .btn {
+        width: 114px;
+        height: 40px;
+    }
+
+
+    #burger-menu {
+        display: block;
+        background: transparent;
+    }
+
+    #nav-menu {
+        display: none;
+    }
+
+    #nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 30px 50px;
+        gap: 30px;
+        font-weight: 700;
+    }
+
+    #nav-links .btn {
+        margin-top: 20px;
+    }
+
     #main-intro {
         padding: 0;
     }
