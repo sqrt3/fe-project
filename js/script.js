@@ -7,6 +7,8 @@ let burgerBtn = document.getElementById('burger-menu');
 let navMenu = document.getElementById('nav-menu');
 const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z0-9]{2,}$/;
 
+let isMenuOpened = false;
+
 function validate() {
     // let form = document.getElementById('main-subscribe-input');
     let target = document.getElementById('input-email');
@@ -20,10 +22,12 @@ function validate() {
 }
 
 document.addEventListener('scroll', function() {
-    if (window.scrollY >= 900) {
-        headerTop.style.position = 'fixed';
-    } else {
-        headerTop.style.position = 'relative';
+    if (!isMenuOpened) {
+        if (window.scrollY >= 900) {
+            headerTop.style.position = 'fixed';
+        } else {
+            headerTop.style.position = 'relative';
+        }
     }
 })
 
@@ -44,6 +48,7 @@ burgerBtn.addEventListener('click', function() {
     let btnIco = document.querySelector('#burger-menu img');
     let container = document.querySelector('.nav-container');
     if (navMenu.classList.contains('active')) { // active를 가지고 있을 때
+        isMenuOpened = false;
         logo.style.display = 'block';           // 갖고 있다면 ( 메뉴가 펼쳐지기 전 )
 
         navMenu.style.display = 'none';
@@ -62,6 +67,7 @@ burgerBtn.addEventListener('click', function() {
         container.style.height = 'auto';
         container.style.width = '100%';
     } else {
+        isMenuOpened = true;
         logo.style.display = 'none';            // 아니라면 ( 메뉴가 펼쳐진 후 )
 
         navMenu.style.display = 'block';
