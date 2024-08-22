@@ -1,4 +1,4 @@
-let scrollBtn = document.getElementById('goTopBtn');
+let goTopBtn = document.getElementById('goTopBtn');
 let topBtn = document.getElementById('topBtn');
 let modalWindow = document.getElementById('modal-window');
 let modalBtn = document.getElementById('modal-btn');
@@ -21,10 +21,8 @@ function validate() {
 
 document.addEventListener('scroll', function() {
     if (window.scrollY >= 900) {
-        scrollBtn.style.display = 'inline-block';
         headerTop.style.position = 'fixed';
     } else {
-        scrollBtn.style.display = 'none';
         headerTop.style.position = 'relative';
     }
 })

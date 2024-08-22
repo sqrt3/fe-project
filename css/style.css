@@ -311,10 +311,11 @@ hr {
 }
 
 #goTopBtn {
+    position: sticky;
     width: 50px;
     height: 50px;
     left: 95%;
-    bottom: 5%;
+    top: 91vh;
     z-index: 2;
 }
 
@@ -597,7 +598,6 @@ hr {
     }
 
     #goTopBtn {
-        left: 85%;
         z-index: 1;
     }
 
