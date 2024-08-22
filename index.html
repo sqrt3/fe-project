@@ -2,23 +2,22 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HODU</title>
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-<header id="headerTop">
+<header id="headerTop" class="font-regular">
     <div class="header-top">
-        <div class="nav-container">
+        <div class="nav-container centered-flex gap-large width-full">
             <h1 class="logo-ico">
                 <a href="#"><img src="./img/logo.png" alt="HODU"></a>
             </h1>
             <button id="burger-menu"><img src="./img/menu.png" alt="메뉴 열기"></button>
             <nav id="nav-menu">
-                <ul id="nav-links">
+                <ul id="nav-links" class="flex-row gap-small">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Support</a></li>
@@ -27,12 +26,12 @@
             </nav>
         </div>
     </div>
-    <div id="header">
-        <h2 id="header-title">
+    <div id="header" class="flex-column centered-flex font-regular gap-large">
+        <h2 id="header-title" class="font-large">
             Lorem Ipsum is simply<br />
             dummy text of the printing and
         </h2>
-        <p id="header-content">
+        <p id="header-content" class="font-medium">
             Lorem Ipsum is simply dummy text of the printing and<br />
             typesetting industry.<br />
             Lorem Ipsum has been the industry's standard dummy text<br />
@@ -42,32 +41,40 @@
     </div>
 </header>
 <main>
-    <a href="#headerTop" id="goTopBtn" ><img src="./img/ico-top.png" id="topBtn" alt="사이트 최상단으로 이동하기"></a>
-    <section id="main-intro">
-        <img src="./img/img1-1.jpg" alt="이불 위에 누워 허공을 보는 호두">
-        <div class="text-content">
-            <h2>Lorem Ipsum is simply<br />
+    <a href="#headerTop" id="goTopBtn"><img src="./img/ico-top.png" id="topBtn" alt="사이트 최상단으로 이동하기"></a>
+    <section id="main-intro" class="flex-row flex-wrap gap-large centered-flex">
+        <img src="./img/img1-1.jpg" alt="이불 위에 누워 허공을 보는 호두" class="border-radius-large box-shadow">
+        <div class="text-content flex-column">
+            <h2 class="font-large text-center">
+                Lorem Ipsum is simply<br />
                 dummy text of the printing<br />
-                and dummy text</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting<br /> industry.</p>
+                and dummy text
+            </h2>
+            <p class="font-medium text-center">
+                Lorem Ipsum is simply dummy text of the printing and typesetting<br /> industry.
+            </p>
         </div>
     </section>
-    <section id="main-gallery">
-        <h2 id="gallery-heading">dummy text of the printing and dummy</h2>
-        <p id="gallery-content">Lorem Ipsum is simply <span>dummy text</span> of the printing and typesetting industry.<br />
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</p>
+    <section id="main-gallery" class="flex-column">
+        <h2 id="gallery-heading" class="font-large text-center color-orange">
+            dummy text of the printing and dummy
+        </h2>
+        <p id="gallery-content" class="font-medium text-center">
+            Lorem Ipsum is simply <span class="color-orange">dummy text</span> of the printing and typesetting industry.<br />
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+        </p>
         <div id="gallery-pics">
-            <ul>
-                <li><img src="./img/img-1.jpg" alt="캣타워 위에서 멍하니 허공을 바라보는 호두"></li>
-                <li><img src="./img/img-2.jpg" alt="바닥에 앉아 하늘색 벽지를 쳐다보는 호두"></li>
-                <li><img src="./img/img-3.jpg" alt="침대 아래에서 나를 바라보는 호두"></li>
-                <li><img src="./img/img-4.png" alt="가까이서 바라본 호두"></li>
-                <li><img src="./img/img-5.png" alt="나무 바닥에서 위에있는 나를 쳐다보는 호두"></li>
-                <li><img src="./img/img-6.png" alt="야외 대리석 바닥에 누워 하품하는 호두"></li>
+            <ul class="flex-row flex-wrap gap-large">
+                <li><img src="./img/img-1.jpg" alt="캣타워 위에서 멍하니 허공을 바라보는 호두" class="border-radius-large box-shadow"></li>
+                <li><img src="./img/img-2.jpg" alt="바닥에 앉아 하늘색 벽지를 쳐다보는 호두" class="border-radius-large box-shadow"></li>
+                <li><img src="./img/img-3.jpg" alt="침대 아래에서 나를 바라보는 호두" class="border-radius-large box-shadow"></li>
+                <li><img src="./img/img-4.png" alt="가까이서 바라본 호두" class="border-radius-large box-shadow"></li>
+                <li><img src="./img/img-5.png" alt="나무 바닥에서 위에있는 나를 쳐다보는 호두" class="border-radius-large box-shadow"></li>
+                <li><img src="./img/img-6.png" alt="야외 대리석 바닥에 누워 하품하는 호두" class="border-radius-large box-shadow"></li>
             </ul>
         </div>
-        <div id="gallery-more">
-            <p>
+        <div id="gallery-more" class="flex-column centered-flex gap-small">
+            <p class="font-medium">
                 Continue exploring HODU
             </p>
             <a href="#">
@@ -76,45 +83,45 @@
         </div>
     </section>
     <hr>
-    <section id="main-map">
-        <h2>Where you'll be</h2>
-        <address>330, Cheomdan-ro, Jeju-si, Jeju-do, Republic of Korea</address>
-        <div id="map-img"></div>
+    <section id="main-map" class="flex-column">
+        <h2 class="font-large">Where you'll be</h2>
+        <address class="font-medium">330, Cheomdan-ro, Jeju-si, Jeju-do, Republic of Korea</address>
+        <div id="map-img" class="bg-cover"></div>
     </section>
-    <section id="subscribe-box">
-        <div id="main-subscribe">
-            <h3>Subscribe to our Blog post</h3>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br />
+    <section id="subscribe-box" class="flex-row flex-wrap centered-flex gap-medium bg-cover">
+        <div id="main-subscribe" class="font-regular text-center">
+            <h3 class="font-large">Subscribe to our Blog post</h3>
+            <p class="font-medium">Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br />
                 Lorem Ipsum has been the industry's standard dummy text </p>
         </div>
-        <form id="main-subscribe-input">
+        <form id="main-subscribe-input" class="flex-row flex-wrap centered-flex gap-small">
             <label for="input-email" style="display: none">이메일 입력</label>
-            <input type="text" placeholder="Enter your e-mail address" id="input-email" required>
-            <button type="submit" class="btn" onclick="validate()">Subscribe</button>
+            <input type="text" placeholder="Enter your e-mail address" id="input-email" class="font-small" required>
+            <button type="submit" class="btn">Subscribe</button>
         </form>
-
     </section>
+    <div id="footer-bg"></div>
 </main>
-<div id="modal-window">
-    <div id="modal-cat-ico"></div>
-    <h2>Thank you!</h2>
-    <p>Lorem Ipsum is simply dummy text of the printing industry. </p>
+<div id="modal-window" class="flex-column centered-flex bg-cover box-shadow border-radius-large">
+    <div id="modal-cat-ico" class="bg-cover"></div>
+    <h2 class="font-large color-orange">Thank you!</h2>
+    <p class="font-small">Lorem Ipsum is simply dummy text of the printing industry. </p>
     <button type="submit" class="btn" id="modal-btn">OK! I Love HODU</button>
 </div>
 <footer id="footer-container">
-    <div id="footer-bg"></div>
-    <div id="footer-content">
+
+    <div id="footer-content" class="flex-column centered-flex gap-small">
         <h2>
             <a href="#"><img src="./img/logo-footer.png" alt="HODU Logo" id="footer-logo"></a>
         </h2>
-        <ul id="footer-sns">
+        <ul id="footer-sns" class="flex-row gap-small">
             <li><a href="#" class="blog-ico"><img src="./img/ico-blog.png" alt="호두 블로그로 이동하기"></a></li>
             <li><a href="#" class="ig-ico"><img src="./img/ico-ig.png" alt="호두 인스타그램으로 이동하기"></a></li>
             <li><a href="#" class="fb-ico"><img src="./img/ico-fb.png" alt="호두 페이스북으로 이동하기"></a></li>
             <li><a href="#" class="yt-ico"><img src="./img/ico-yt.png" alt="호두 유튜브로 이동하기"></a></li>
         </ul>
-        <div id="footer-links">
-            <ul>
+        <div id="footer-links" class="flex-row">
+            <ul class="flex-column text-right font-small">
                 <li><a href="#">About</a></li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Support</a></li>
