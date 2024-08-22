@@ -1,4 +1,4 @@
-let scrollBtn = document.getElementById('goTopBtn');
+let goTopBtn = document.getElementById('goTopBtn');
 let topBtn = document.getElementById('topBtn');
 let modalWindow = document.getElementById('modal-window');
 let modalBtn = document.getElementById('modal-btn');
@@ -8,7 +8,7 @@ let navMenu = document.getElementById('nav-menu');
 const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z0-9]{2,}$/;
 
 function validate() {
-    let form = document.getElementById('main-subscribe-input');
+    // let form = document.getElementById('main-subscribe-input');
     let target = document.getElementById('input-email');
     if (emailPattern.test(target.value) === true) {
         modalWindow.style.display = 'flex';
@@ -16,31 +16,30 @@ function validate() {
     else {
         alert("유효한 이메일을 입력해주세요!");
     }
+    // form.submit();
 }
 
-document.addEventListener('scroll', function(event) {
+document.addEventListener('scroll', function() {
     if (window.scrollY >= 900) {
-        scrollBtn.style.display = 'block';
         headerTop.style.position = 'fixed';
     } else {
-        scrollBtn.style.display = 'none';
         headerTop.style.position = 'relative';
     }
 })
 
-topBtn.addEventListener('mouseover', function(event) {
+topBtn.addEventListener('mouseover', function() {
     topBtn.src = './img/ico-top-hover.png';
 })
 
-topBtn.addEventListener('mouseout', function(event) {
+topBtn.addEventListener('mouseout', function() {
     topBtn.src = './img/ico-top.png';
 })
 
-modalBtn.addEventListener('click', function(event) {
+modalBtn.addEventListener('click', function() {
     modalWindow.style.display = 'none';
 })
 
-burgerBtn.addEventListener('click', function(event) {
+burgerBtn.addEventListener('click', function() {
     let logo = document.querySelector('.logo-ico');
     let btnIco = document.querySelector('#burger-menu img');
     let container = document.querySelector('.nav-container');

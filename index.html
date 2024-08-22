@@ -42,8 +42,8 @@
     </div>
 </header>
 <main>
+    <a href="#headerTop" id="goTopBtn" ><img src="./img/ico-top.png" id="topBtn" alt="사이트 최상단으로 이동하기"></a>
     <section id="main-intro">
-        <!-- alt 작성 요망-->
         <img src="./img/img1-1.jpg" alt="이불 위에 누워 허공을 보는 호두">
         <div class="text-content">
             <h2>Lorem Ipsum is simply<br />
@@ -79,18 +79,7 @@
     <section id="main-map">
         <h2>Where you'll be</h2>
         <address>330, Cheomdan-ro, Jeju-si, Jeju-do, Republic of Korea</address>
-        <div id="daumRoughmapContainer1724048741264" class="root_daum_roughmap root_daum_roughmap_landing"></div>
-        <!--        <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>-->
-
-        <!--        &lt;!&ndash; 3. 실행 스크립트 &ndash;&gt;-->
-        <!--        <script charset="UTF-8">-->
-        <!--            new daum.roughmap.Lander({-->
-        <!--                "timestamp" : "1724048741264",-->
-        <!--                "key" : "2kdqy",-->
-        <!--                "mapWidth" : "1280",-->
-        <!--                "mapHeight" : "520"-->
-        <!--            }).render();-->
-        <!--        </script>-->
+        <div id="map-img"></div>
     </section>
     <section id="subscribe-box">
         <div id="main-subscribe">
@@ -99,6 +88,7 @@
                 Lorem Ipsum has been the industry's standard dummy text </p>
         </div>
         <form id="main-subscribe-input">
+            <label for="input-email" style="display: none">이메일 입력</label>
             <input type="text" placeholder="Enter your e-mail address" id="input-email" required>
             <button type="submit" class="btn" onclick="validate()">Subscribe</button>
         </form>
@@ -115,17 +105,24 @@
     <div id="footer-bg"></div>
     <div id="footer-content">
         <h2>
-            <a href="#"><img src="./img/logo-footer.png" alt="HODU Logo"></a>
+            <a href="#"><img src="./img/logo-footer.png" alt="HODU Logo" id="footer-logo"></a>
         </h2>
-        <ul>
+        <ul id="footer-sns">
             <li><a href="#" class="blog-ico"><img src="./img/ico-blog.png" alt="호두 블로그로 이동하기"></a></li>
             <li><a href="#" class="ig-ico"><img src="./img/ico-ig.png" alt="호두 인스타그램으로 이동하기"></a></li>
             <li><a href="#" class="fb-ico"><img src="./img/ico-fb.png" alt="호두 페이스북으로 이동하기"></a></li>
             <li><a href="#" class="yt-ico"><img src="./img/ico-yt.png" alt="호두 유튜브로 이동하기"></a></li>
         </ul>
+        <div id="footer-links">
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Terms of Use</a></li>
+            </ul>
+        </div>
     </div>
 </footer>
-<a href="#headerTop" id="goTopBtn" style="position: sticky; display: none"><img src="./img/ico-top.png" id="topBtn" alt="사이트 최상단으로 이동하기"></a>
 <script src="./js/script.js"></script>
 </body>
 </html>

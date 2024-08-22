@@ -13,7 +13,7 @@
 }
 
 html {
-    font-family: 'Pretendard-Regular';
+    font-family: 'Pretendard-Regular', sans-serif;
     scroll-behavior: smooth;
 }
 
@@ -26,7 +26,6 @@ a {
     line-height: normal;
     text-decoration: none;
     color: inherit;
-    border: 1px solid red;
 }
 
 button {
@@ -218,11 +217,11 @@ hr {
     font-size: 16px;
 }
 
-#daumRoughmapContainer1724048741264 {
-    margin-top: 1.5vw; /* 28px */
-    width: 100%;
-    height: 520px;
-    border-radius: 12px;
+#map-img {
+    background-size: contain;
+    background: url("../img/map.png") no-repeat center;
+    width: 66.67vw;
+    height: 48.15vh;
 }
 
 #subscribe-box {
@@ -235,7 +234,7 @@ hr {
     background: #263140;
     border-radius: 30px;
     gap: 1vw; /* 18px */
-    z-index: 3;
+    z-index: 1;
     position: relative;
 }
 
@@ -306,21 +305,18 @@ hr {
     gap: 1.1vw; /* 20px */
 }
 
-#footer-content h2 a img {
+#footer-logo {
     width: 226px;
     height: 70px;
 }
 
-#footer-content ul li a img {
-    width: 42px;
-}
-
 #goTopBtn {
+    position: sticky;
     width: 50px;
     height: 50px;
-    position: sticky;
     left: 95%;
-    bottom: 5%;
+    top: 91vh;
+    z-index: 2;
 }
 
 #modal-window {
@@ -369,6 +365,10 @@ hr {
     display: none;
 }
 
+#footer-links {
+    display: none;
+}
+
 @media (max-width: 768px) {
     .btn {
         width: 114px;
@@ -402,10 +402,119 @@ hr {
         padding: 0;
     }
 
+    #headerTop {
+        height: 802px;
+    }
+
+    #header {
+        margin: 0 15px;
+        align-items: center;
+        justify-content: center;
+        background-size: 197px 422px;
+        background-position: 50% 90%;
+        gap: 30px;
+        padding-bottom: 390px;
+    }
+
+    #header-title {
+        font-size: 24px;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    #header-content {
+        font-size: 14px;
+        line-height: 18px;
+        text-align: center;
+    }
+
+    #main-intro {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 40px;
+        gap: 20px;
+    }
+
+    #main-intro img {
+        width: 326px;
+        height: 190px;
+    }
+
+    #main-intro .text-content h2 {
+        font-size: 24px;
+        line-height: 30px;
+        padding: 20px 0;
+    }
+
+    #main-intro .text-content p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    #main-gallery {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    #main-gallery #gallery-heading {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    #main-gallery #gallery-content {
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 400;
+        margin: 0;
+        padding: 30px 32px;
+    }
+
+    #main-gallery #gallery-pics ul {
+        gap: 0;
+    }
+
+    #main-gallery #gallery-pics img {
+        margin: 32px;
+        width: 314px;
+        height: 314px;
+    }
+
+    #main-gallery #gallery-more {
+        gap: 28px;
+    }
+
+    hr {
+        margin: 60px auto 40px;
+    }
+
+    #main-map {
+        margin: 0 32px;
+    }
+
+    #main-map h2 {
+        font-size: 24px;
+        line-height: 30px;
+        padding-bottom: 16px;
+    }
+
+    #main-map address {
+        padding-bottom: 28px;
+    }
+
+    #map-img {
+        width: 326px;
+        height: 132px;
+        margin-bottom: 40px;
+    }
+
     #subscribe-box {
         justify-content: space-evenly;
-        align-items: center;
-        height: 50vh;
+        align-items: flex-start;
+        height: 368px;
+        margin: 0 32px;
+        padding: 32px 36px;
     }
 
     #main-subscribe-input {
@@ -416,7 +525,102 @@ hr {
 
     #main-subscribe-input button {
         display: block;
-        top: auto;
-        right: auto;
+        top: 30px;
+        right: 0;
+    }
+
+    #main-subscribe h3 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    #main-subscribe p {
+        margin-top: 30px;
+    }
+
+    #main-subscribe-input::before {
+        width: 18px;
+        height: 18px;
+        background-size: cover;
+        left: 20px;
+        top: 25%;
+    }
+
+    #subscribe-box #main-subscribe-input #input-email {
+        padding: 12px 0 12px 48px;
+        font-size: 12px;
+        margin-bottom: 40px;
+    }
+
+    #subscribe-box #main-subscribe-input button {
+        margin-top: 16px;
+    }
+
+    #footer-links {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row;
+    }
+
+    #footer-links ul {
+        flex-direction: column;
+        text-align: right;
+        margin: 30px 22px 16px 16px;
+        color: #767676;
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 400;
+        gap: 16px;
+    }
+
+    #footer-content {
+        height: 178px;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    #footer-logo {
+        width: 112px;
+        height: 34px;
+        margin: 30px 120px 37px 20px;
+    }
+
+    #footer-sns {
+        margin: 20px 24px;
+        padding-right: 80px;
+    }
+
+    #footer-sns img {
+        width: 32px;
+        height: 32px;
+    }
+
+    #goTopBtn {
+        z-index: 1;
+    }
+
+    #modal-window {
+        width: 300px;
+        height: 300px;
+        background-size: contain;
+        background-color: #F2E9D8;
+    }
+
+    #modal-cat-ico {
+        width: 60px;
+        height: 62px;
+    }
+
+    #modal-window h2 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    #modal-window p {
+        font-size: 14px;
+        line-height: 18px;
+        text-align: center;
     }
 }
