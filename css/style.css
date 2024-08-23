@@ -416,7 +416,7 @@ hr {
     background: url("../img/ico-mail.png") no-repeat;
 }
 
-#main-subscribe-input input {
+#input-email {
     width: 100%;
     padding: 20px 135px 20px 60px;
     border-radius: 60px;
@@ -424,7 +424,7 @@ hr {
 
 #main-subscribe-input button {
     position: absolute;
-    top: 10%;
+    top: 9.5%;
     right: 1%;
 }
 
@@ -693,7 +693,7 @@ hr {
 
     #main-subscribe-input button {
         display: block;
-        top: 30px;
+        top: 50px;
         right: 0;
     }
 
@@ -718,10 +718,6 @@ hr {
         padding: 12px 0 12px 48px;
         font-size: 12px;
         margin-bottom: 40px;
-    }
-
-    #main-subscribe-input button {
-        margin-top: 20px;
     }
 
     #footer-links {
@@ -756,8 +752,8 @@ hr {
     }
 
     #footer-sns {
-        margin: 17px 24px;
-        padding-right: 80px;
+        margin: 10px;
+        padding-right: 35px;
     }
 
     #footer-sns img {
