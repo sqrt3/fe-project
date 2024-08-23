@@ -278,14 +278,14 @@ nav > ul {
 }
 
 /* Main Gallery */
-#main-gallery #gallery-heading {
+#gallery-heading {
     font-weight: 700;
     font-size: 48px;
     text-align: center;
     color: #D97652;
 }
 
-#main-gallery #gallery-content {
+#gallery-content {
     margin-top: 3.7vh; /* 40px */
     margin-bottom: 8.15vh;
     font-size: 16px;
@@ -416,15 +416,15 @@ hr {
     background: url("../img/ico-mail.png") no-repeat;
 }
 
-#main-subscribe-input input {
+#input-email {
     width: 100%;
-    padding: 20px 135px 20px 60px;
+    padding: 20px 160px 20px 60px;
     border-radius: 60px;
 }
 
 #main-subscribe-input button {
     position: absolute;
-    top: 10%;
+    top: 9.5%;
     right: 1%;
 }
 
@@ -639,13 +639,17 @@ hr {
     }
 
     #gallery-pics ul {
-        gap: 0;
+        gap: 32px;
+    }
+
+    #gallery-pics li {
+        width: 326px;
+        height: 326px;
     }
 
     #gallery-pics img {
-        margin: 32px;
-        width: 314px;
-        height: 314px;
+        width: 326px;
+        height: 326px;
         object-fit: cover;
     }
 
@@ -655,6 +659,7 @@ hr {
 
     hr {
         margin: 60px auto 40px;
+        width: auto;
     }
 
     #main-map {
@@ -693,7 +698,7 @@ hr {
 
     #main-subscribe-input button {
         display: block;
-        top: 30px;
+        top: 50px;
         right: 0;
     }
 
@@ -715,13 +720,9 @@ hr {
     }
 
     #input-email {
-        padding: 12px 0 12px 48px;
+        padding: 12px 12px 12px 40px;
         font-size: 12px;
         margin-bottom: 40px;
-    }
-
-    #main-subscribe-input button {
-        margin-top: 20px;
     }
 
     #footer-links {
@@ -733,12 +734,16 @@ hr {
     #footer-links ul {
         flex-direction: column;
         text-align: right;
-        margin: 30px 18px 16px 16px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
         color: #767676;
         font-size: 14px;
         line-height: 18px;
         font-weight: 400;
         gap: 16px;
+        height: 178px;
+        margin-right: 14px;
     }
 
     #footer-content {
@@ -756,8 +761,8 @@ hr {
     }
 
     #footer-sns {
-        margin: 17px 24px;
-        padding-right: 80px;
+        margin: 20px 25px;
+        padding-right: 35px;
     }
 
     #footer-sns img {
