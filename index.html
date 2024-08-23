@@ -30,7 +30,7 @@
             </nav>
         </div>
     </div>
-    <div id="header" class="flex-column centered-flex font-regular gap-large">
+    <div id="header" class="flex-column centered-flex font-regular gap-large width-1280">
         <h2 id="header-title" class="font-large">
             Lorem Ipsum is simply<br />
             dummy text of the printing and
@@ -69,14 +69,14 @@
             Lorem Ipsum is simply <span class="color-orange font-bold">dummy text</span> of the printing and typesetting industry.<br />
             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
         </p>
-        <div id="gallery-pics">
-            <ul class="flex-row flex-wrap gap-large">
-                <li><img src="./img/img-1.jpg" alt="캣타워 위에서 멍하니 허공을 바라보는 호두 이미지" class="border-radius-large box-shadow"></li>
-                <li><img src="./img/img-2.jpg" alt="바닥에 앉아 하늘색 벽지를 쳐다보는 호두 이미지" class="border-radius-large box-shadow"></li>
-                <li><img src="./img/img-3.jpg" alt="침대 아래에서 나를 바라보는 호두 이미지" class="border-radius-large box-shadow"></li>
-                <li><img src="./img/img-4.png" alt="가까이서 바라본 호두 이미지" class="border-radius-large box-shadow"></li>
-                <li><img src="./img/img-5.png" alt="나무 바닥에서 위에있는 나를 쳐다보는 호두 이미지" class="border-radius-large box-shadow"></li>
-                <li><img src="./img/img-6.png" alt="야외 대리석 바닥에 누워 하품하는 호두 이미지" class="border-radius-large box-shadow"></li>
+        <div id="gallery-pics" class="width-1280">
+            <ul class="flex-row flex-wrap">
+                <li><img src="./img/img-1.jpg" alt="캣타워 위에서 멍하니 허공을 바라보는 고양이 호두 이미지" class="border-radius-large box-shadow"></li>
+                <li><img src="./img/img-2.jpg" alt="바닥에 앉아 하늘색 벽지를 쳐다보는 고양이 호두 이미지" class="border-radius-large box-shadow"></li>
+                <li><img src="./img/img-3.jpg" alt="침대 아래에서 나를 바라보는 고양이 호두 이미지" class="border-radius-large box-shadow"></li>
+                <li><img src="./img/img-4.png" alt="가까이서 바라본 고양이 호두 이미지" class="border-radius-large box-shadow"></li>
+                <li><img src="./img/img-5.png" alt="나무 바닥에서 위에있는 나를 쳐다보는 고양이 호두 이미지" class="border-radius-large box-shadow"></li>
+                <li><img src="./img/img-6.png" alt="야외 대리석 바닥에 누워 하품하는 고양이 호두 이미지" class="border-radius-large box-shadow"></li>
             </ul>
         </div>
         <div id="gallery-more" class="flex-column centered-flex gap-small">
@@ -94,7 +94,7 @@
         <address class="font-medium">330, Cheomdan-ro, Jeju-si, Jeju-do, Republic of Korea</address>
         <div id="map-img" class="bg-cover" aria-label="지도 이미지"></div>
     </section>
-    <section id="subscribe-box" class="flex-row flex-wrap centered-flex gap-medium bg-cover" aria-labelledby="subscribe-heading">
+    <section id="subscribe-box" class="flex-row flex-wrap centered-flex gap-medium bg-cover width-1280" aria-labelledby="subscribe-heading">
         <div id="main-subscribe" class="font-regular text-center">
             <h3 id="subscribe-heading" class="font-large text-left">Subscribe to our Blog post</h3>
             <p class="font-medium font-default text-left">Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br />
@@ -103,7 +103,7 @@
         <form id="main-subscribe-input" class="flex-row flex-wrap centered-flex gap-small" aria-labelledby="subscribe-heading">
             <label for="input-email" class="sr-only">이메일 입력</label>
             <input type="email" placeholder="Enter your e-mail address" id="input-email" class="font-small" required>
-            <button class="btn" onclick="validate()">Subscribe</button>
+            <button type="button" class="btn" onclick="validate()">Subscribe</button>
         </form>
     </section>
     <div id="footer-bg"></div>
