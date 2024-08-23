@@ -36,15 +36,15 @@
 }
 
 .gap-small {
-    gap: 1vw; /* 18px */
+    gap: 1.125em; /* 18px */
 }
 
 .gap-medium {
-    gap: 2vw; /* 36px */
+    gap: 2.25em; /* 36px */
 }
 
 .gap-large {
-    gap: 5vw; /* 110px */
+    gap: 6.875em; /* 110px */
 }
 
 .text-left {
@@ -198,7 +198,7 @@ header {
     height: 100px;
     justify-content: space-around;
     align-items: center;
-    gap: 5vw; /* 110px */
+    gap: 6.875rem; /* 110px */
     z-index: 2;
 }
 
@@ -214,7 +214,7 @@ header {
 nav > ul {
     display: flex;
     align-items: center;
-    gap: 1.6vw; /* 30px */
+    gap: 1.875rem; /* 30px */
 }
 
 #headerTop {
@@ -232,7 +232,7 @@ nav > ul {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 2.1vw; /* 40px */
+    gap: 2.5em; /* 40px */
 }
 
 #header-title {
@@ -255,9 +255,9 @@ nav > ul {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 5vw; /* 110px */
-    justify-content: space-around;
-    padding: 4vh 16.67vw 6vh; /* 80px, 120px */
+    gap: 6.875em; /* 110px */
+    /*justify-content: space-around;*/
+    padding: 4vh 29.63vh 6.25vw; /* 80px, 120px */
 }
 
 #main-intro img {
@@ -270,7 +270,7 @@ nav > ul {
 
 .text-content h2 {
     font-size: 36px;
-    margin-bottom: 1.6vw; /* 30px */
+    margin-bottom: 2.78vh; /* 30px */
 }
 
 .text-content p {
@@ -286,7 +286,7 @@ nav > ul {
 }
 
 #main-gallery #gallery-content {
-    margin-top: 2.1vw; /* 40px */
+    margin-top: 3.7vh; /* 40px */
     margin-bottom: 8.15vh;
     font-size: 16px;
     text-align: center;
@@ -320,6 +320,7 @@ nav > ul {
     height: 378px;
     border-radius: 30px;
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.25);
+    object-fit: cover;
 }
 
 #gallery-more {
@@ -327,7 +328,7 @@ nav > ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.5vw; /* 28px */
+    gap: 1.75em; /* 28px */
 }
 
 #gallery-more p {
@@ -337,7 +338,7 @@ nav > ul {
 
 hr {
     text-align: center;
-    margin: 4vw auto 3.5vw; /* 80px, 68px */
+    margin: 7.41vh auto 3.5vw; /* 80px, 68px */
     width: 80vw; /* 1280px */
     color: #C4C4C4;
 }
@@ -347,7 +348,7 @@ hr {
     margin: 0 16.67vw; /* 16.67vw is approximate for the original margin of 280px */
     display: flex;
     flex-direction: column;
-    gap: 1.1vw; /* 20px */
+    gap: 1.25em; /* 20px */
 }
 
 #main-map h2 {
@@ -363,7 +364,6 @@ hr {
 }
 
 #map-img {
-    background-size: contain;
     background: url("../img/map.png") no-repeat center;
     width: 66.67vw;
     height: 48.15vh;
@@ -376,11 +376,11 @@ hr {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    margin: 5vw 16.67vw 0; /* 81px, 16.67vw, 0 */
+    margin: 7.5vh 29.63vh 0; /* 81px, 16.67vw, 0 */
     padding: 4.6vh 3vw;
     background: #263140;
     border-radius: 30px;
-    gap: 1vw; /* 18px */
+    gap: 1.125em; /* 18px */
     z-index: 1;
     position: relative;
 }
@@ -391,7 +391,7 @@ hr {
 
 #main-subscribe h3 {
     font-size: 36px;
-    margin-bottom: 1vw; /* 18px */
+    margin-bottom: 1.67vh; /* 18px */
 }
 
 #main-subscribe p {
@@ -450,7 +450,7 @@ hr {
 
 #footer-content ul {
     display: flex;
-    gap: 1.1vw; /* 20px */
+    gap: 1.25em; /* 20px */
 }
 
 #footer-links {
@@ -504,7 +504,7 @@ hr {
     background: url("../img/modal-cat.png") no-repeat;
     background-size: cover;
     width: 5.8vw; /* 110px */
-    height: 6vw; /* 112px */
+    height: 10.37vh; /* 112px */
     margin-bottom: 0.6vw; /* 12px */
 }
 
@@ -516,7 +516,7 @@ hr {
 
 #modal-window p {
     font-size: 14px;
-    margin-bottom: 1.4vw; /* 26px */
+    margin-bottom: 2.41vh; /* 26px */
 }
 
 #modal-window button {
@@ -608,13 +608,13 @@ hr {
         height: 190px;
     }
 
-    #main-intro .text-content h2 {
+    .text-content h2 {
         font-size: 24px;
         line-height: 30px;
         padding: 20px 0;
     }
 
-    #main-intro .text-content p {
+    .text-content p {
         font-size: 14px;
         line-height: 18px;
     }
@@ -625,12 +625,12 @@ hr {
         padding: 20px;
     }
 
-    #main-gallery #gallery-heading {
+    #gallery-heading {
         font-size: 24px;
         line-height: 30px;
     }
 
-    #main-gallery #gallery-content {
+    #gallery-content {
         font-size: 16px;
         line-height: 20px;
         font-weight: 400;
@@ -638,18 +638,18 @@ hr {
         padding: 30px 32px;
     }
 
-    #main-gallery #gallery-pics ul {
+    #gallery-pics ul {
         gap: 0;
     }
 
-    #main-gallery #gallery-pics img {
+    #gallery-pics img {
         margin: 32px;
         width: 314px;
         height: 314px;
         object-fit: cover;
     }
 
-    #main-gallery #gallery-more {
+    #gallery-more {
         gap: 28px;
     }
 
@@ -714,13 +714,13 @@ hr {
         top: 25%;
     }
 
-    #subscribe-box #main-subscribe-input #input-email {
+    #input-email {
         padding: 12px 0 12px 48px;
         font-size: 12px;
         margin-bottom: 40px;
     }
 
-    #subscribe-box #main-subscribe-input button {
+    #main-subscribe-input button {
         margin-top: 20px;
     }
 
