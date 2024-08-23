@@ -646,6 +646,10 @@ hr {
         padding: 30px 32px;
     }
 
+    #gallery-pics {
+        margin: auto;
+    }
+
     #gallery-pics ul {
         gap: 32px;
     }
@@ -653,6 +657,7 @@ hr {
     #gallery-pics li {
         width: 326px;
         height: 326px;
+        margin: 16px;
     }
 
     #gallery-pics img {
