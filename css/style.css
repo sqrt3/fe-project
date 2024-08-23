@@ -368,6 +368,7 @@ hr {
     width: 66.67vw;
     height: 48.15vh;
     background-size: contain;
+    border-radius: 12px;
 }
 
 /* Subscribe Box */
