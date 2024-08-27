@@ -508,8 +508,8 @@ hr {
 #modal-cat-ico {
     background: url("../img/modal-cat.png") no-repeat;
     background-size: cover;
-    width: 5.8vw; /* 110px */
-    height: 10.37vh; /* 112px */
+    width: 110px;
+    height: 112px;
     margin-bottom: 0.6vw; /* 12px */
 }
 
