@@ -1,19 +1,29 @@
 // let goTopBtn = document.getElementById('goTopBtn');
-let topBtn = document.getElementById('topBtn');
-let modalWindow = document.getElementById('modal-window');
-let modalBtn = document.getElementById('modal-btn');
-let headerTop = document.querySelector('.nav-container');
-let burgerBtn = document.getElementById('burger-menu');
-let navMenu = document.getElementById('nav-menu');
+const topBtn = document.getElementById('topBtn');
+
+const modalWindow = document.getElementById('modal-window');
+const modalBtn = document.getElementById('modal-btn');
+const modalInput = document.getElementById('input-email');
+const modalFocus = document.getElementById('modal-focus');
+
+const headerTop = document.querySelector('.nav-container');
+const burgerBtn = document.getElementById('burger-menu');
+const navMenu = document.getElementById('nav-menu');
+
 const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z0-9]{2,}$/;
+const htmlElement = document.documentElement;
+const bodyElement = document.body;
 
 let isMenuOpened = false;
 
 function validate() {
     // let form = document.getElementById('main-subscribe-input');
-    let target = document.getElementById('input-email');
+    const target = document.getElementById('input-email');
     if (emailPattern.test(target.value) === true) {
         modalWindow.style.display = 'flex';
+        modalFocus.style.display = 'inline-block';
+        htmlElement.classList.add('anti-scroll');
+        bodyElement.classList.add('anti-scroll');
     }
     else {
         alert("유효한 이메일을 입력해주세요!");
@@ -40,13 +50,17 @@ topBtn.addEventListener('mouseout', function() {
 })
 
 modalBtn.addEventListener('click', function() {
+    modalInput.value = null;
     modalWindow.style.display = 'none';
+    modalFocus.style.display = 'none';
+    htmlElement.classList.remove('anti-scroll');
+    bodyElement.classList.remove('anti-scroll');
 })
 
 burgerBtn.addEventListener('click', function() {
-    let logo = document.querySelector('.logo-ico');
-    let btnIco = document.querySelector('#burger-menu img');
-    let container = document.querySelector('.nav-container');
+    const logo = document.querySelector('.logo-ico');
+    const btnIco = document.querySelector('#burger-menu img');
+    const container = document.querySelector('.nav-container');
     if (navMenu.classList.contains('active')) { // active를 가지고 있을 때
         isMenuOpened = false;
         logo.style.display = 'block';           // 갖고 있다면 ( 메뉴가 펼쳐지기 전 )

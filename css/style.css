@@ -11,6 +11,11 @@
     clip: rect(0 0 0 0);
 }
 
+.anti-scroll {
+    overflow: hidden;
+    touch-action: none;
+}
+
 .font-regular {
     font-family: 'Pretendard-Regular', sans-serif;
 }
@@ -192,7 +197,7 @@ img {
 
 /* Header */
 header {
-    height: 900px;
+    height: 102px;
     background-color: #F2E9D8;
 }
 
@@ -250,6 +255,10 @@ nav > ul {
 
 #burger-menu {
     display: none;
+}
+
+.header-color {
+    background: #F2E9D8;
 }
 
 /* Main */
@@ -528,6 +537,16 @@ hr {
     width: 183px;
 }
 
+#modal-focus {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #26314099;
+    height: 100%;
+    z-index: 3;
+}
+
 /* Media Queries */
 @media (max-width: 1024px) {
     .btn {
@@ -575,7 +594,7 @@ hr {
     }
 
     #headerTop {
-        height: 802px;
+        height: 102px;
     }
 
     #goTopBtn {
@@ -583,6 +602,7 @@ hr {
     }
 
     #header {
+        background-color: #F2E9D8;
         margin: 0 15px;
         align-items: center;
         justify-content: center;
@@ -686,14 +706,11 @@ hr {
         padding-bottom: 16px;
     }
 
-    #main-map address {
-        padding-bottom: 28px;
-    }
-
     #map-img {
-        width: 326px;
-        height: 132px;
+        width: 100%;
+        height: 40vw;
         margin-bottom: 40px;
+        border-radius: 12px;
     }
 
     #subscribe-box {
@@ -811,9 +828,5 @@ hr {
         font-size: 14px;
         line-height: 18px;
         text-align: center;
-    }
-
-    #map-img {
-        border-radius: 12px;
     }
 }
