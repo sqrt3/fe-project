@@ -9,11 +9,9 @@
     + [JavaScript](#javascript)
   * [CSS 개선안 - 선택자를 더 자세하게..](#css---선택자를-더-자세하게)
   * [구현 명세서](#구현-명세서)
+  * [구현 화면](#구현-화면)
   * [개발하며 느낀 점](#개발하며-느낀-점)
     + [참고](#참고)
-
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
-
 
 ## TODO
 ### HTML
@@ -54,6 +52,18 @@
     1. 이메일을 입력하고 `Subscribe` 버튼을 클릭하면 모달창이 나타납니다.
     2. 이메일 유효성 검사를 진행해야 합니다. (값이 들어가지 않거나 이메일 형식이 유효하지 않으면 alert 창으로 경고 문구가 떠야합니다.)
     3. 이메일이 잘 입력되었다면 모달창이 뜹니다. 이때 모달창의 `OK! I love HODU` 버튼을 클릭하면 form이 제출되고 모달창이 닫힙니다.
+
+## 구현 화면
+|모바일 헤더|모바일 푸터|모바일 네비게이션 바|
+|----|---|---|
+|![sqrt3 github io_fe-project_(Hodu Mobile)-first](https://github.com/user-attachments/assets/cd494ac6-cd86-4629-b4e4-c44fbda54628)|![sqrt3 github io_fe-project_(Hodu Mobile)](https://github.com/user-attachments/assets/61d1d729-0e2d-4c91-b065-ec310dea841e)|![sqrt3 github io_fe-project_(Hodu Mobile)-nav](https://github.com/user-attachments/assets/3390a996-25ed-4c25-bfd9-f626b3fce755)|
+
+|PC 메인화면|PC 이메일 유효성 검사 실패|PC 이메일 유효성 검사 성공|
+|---|---|---|
+|![sqrt3 github io_fe-project_(PC_1920_1080)](https://github.com/user-attachments/assets/73d32f33-93b1-4c3f-9290-406f414bd814)|![sqrt3 github io_fe-project_(PC_1920_1080)-email-validator-fail](https://github.com/user-attachments/assets/9f7f3108-b4c7-49aa-bc84-5b0a36eaac2e)|![sqrt3 github io_fe-project_(PC_1920_1080)-email-validator-success](https://github.com/user-attachments/assets/adb36a50-472f-4dc4-b1c3-7d65bddb69a2)|
+|PC 갤러리|PC 스크롤 탑 버튼 호버|PC 스크롤 탑 버튼 요소|
+|![sqrt3 github io_fe-project_(PC_1920_1080)-gallery](https://github.com/user-attachments/assets/99459268-0d40-4a9a-81a4-78a32f46ef7e)|![sqrt3 github io_fe-project_(PC_1920_1080)-hover](https://github.com/user-attachments/assets/2b7fdb9f-20b8-4eb8-8032-9610f4c9313f)|![sqrt3 github io_fe-project_(PC_1920_1080)-topbtn](https://github.com/user-attachments/assets/031e6689-ab40-471f-9342-ec929ca52c90)|
+
   
 ## 개발하며 느낀 점
 프론트엔드를 거의 만져본 적이 없었는데, 이번 프로젝트를 진행하면서 HTML의 시멘틱 구조, CSS 선택자의 우선 순위, Flexbox의 특징 등<br />
