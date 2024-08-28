@@ -103,3 +103,10 @@ burgerBtn.addEventListener('click', function() {
         container.style.width = '80%';
     }
 })
+
+modalFocus.addEventListener('click', function() {
+    htmlElement.classList.remove('anti-scroll');
+    bodyElement.classList.remove('anti-scroll');
+    modalFocus.style.display = 'none';
+    modalWindow.style.display = 'none';
+})
